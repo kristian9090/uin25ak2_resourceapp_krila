@@ -1,12 +1,11 @@
-import "../resources/ressurser.js";
-import { showInfo } from "../resources/ressurser.js";
+import "./resources/ressurser.js";
 
-export default function Nav() {
+export default function Nav({resources}) {
 return (
    <nav>
         <ul>
             <li>
-                <a href=¤"></a>
+                <a href={resources.url}></a>
             </li>
         </ul>
    </nav>
