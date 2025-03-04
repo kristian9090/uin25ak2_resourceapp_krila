@@ -1,14 +1,13 @@
-import React from "react";
-import {resources} from ../resources/ressurser.js";
+import React from 'react';
 
-export default function Nav({resources}) {
-return (
-   <nav>
-        <ul>
-            <li>
-                <a href={resources.url}></a>
-            </li>
-        </ul>
-   </nav>
-)
+export default function Nav() {
+    return (
+        <div>
+            <nav>
+                <ul>
+                </ul>
+            </nav>
+            <p>heisann</p>
+        </div>
+    )
 }

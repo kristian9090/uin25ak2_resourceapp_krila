@@ -1,11 +1,15 @@
-import React from 'react';
-import "../resources/ressurser.js";
+
+import React from "react";
+
 export default function Layout({  }) {
     return (
-        <article>
-            <h3>{}</h3>
-            <p>{}</p>
-            <p>{}</p>
-        </article>
-    )
+        <div>
+            <header>
+                {/* <h1>dasds</h1> */}
+            </header>
+            <main>
+                {/* {children} */}
+            </main>
+        </div>
+    );
 }
