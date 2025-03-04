@@ -1,4 +1,5 @@
-import "./resources/ressurser.js";
+import React from "react";
+import {resources} from ../resources/ressurser.js";
 
 export default function Nav({resources}) {
 return (

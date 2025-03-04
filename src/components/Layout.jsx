@@ -1,11 +1,11 @@
 import React from 'react';
 import "../resources/ressurser.js";
-export default function Layout({ resources }) {
+export default function Layout({  }) {
     return (
         <article>
-            <h3>{resources.title}</h3>
-            <p>{resources.url}</p>
-            <p>{resources.category}</p>
+            <h3>{}</h3>
+            <p>{}</p>
+            <p>{}</p>
         </article>
     )
 }
