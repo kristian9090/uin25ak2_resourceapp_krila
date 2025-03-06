@@ -1,16 +1,8 @@
 import React from 'react';
-import { resources } from '../resources/ressurser.js';
 import { Link } from 'react-router-dom';
 
 export default function Nav({ category }) {
-    const showInfo = (category) => {
-        const resource = resources.find(res => res.category === category);
-        if (resource) {
-            alert(`Category: ${resource.category}\nDescription: ${resource.description}`);
-        } else {
-            alert('Category not found');
-        }
-    };
+    
 
     return (
         <nav>
@@ -27,7 +19,7 @@ export default function Nav({ category }) {
                 <Link to="/react">React</Link>
             </button>
             <button className="button">
-                <Link to="/sanity">Sanity and headless CMS</Link>
+                <Link to="/headless-cms">Sanity and headless CMS</Link>
             </button>
 
         </nav>
