@@ -4,9 +4,7 @@ import { resources } from '../resources/ressurser.js';
 export default function Resources({ category }) {
     const filteredResources = resources.filter(res => res.category === category);
 
-    if (filteredResources.length === 0) {
-        return <p>Ingen ressurser funnet for {category}</p>;
-    }
+    
 
     return (
         <section>
