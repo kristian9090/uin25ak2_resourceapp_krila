@@ -4,7 +4,6 @@ import { resources } from '../resources/ressurser.js';
 export default function Resources({ category }) {
     const filteredResources = resources.filter(res => res.category === category);
 
-    
 
     return (
         <section>

@@ -1,5 +1,7 @@
+import React from "react";
+
 export default function PageTitle() {
     return (
-        <h1>Ressursarkiv</h1>
+        <h1>Ressursarkivet til Kristian</h1>
     )
 }
