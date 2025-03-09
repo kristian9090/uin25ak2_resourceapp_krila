@@ -1,20 +1,18 @@
 
 header {
+    margin: 0;
+    padding: 0;
     padding-top: 8rem;
     background-color: var(--white2);
     width: 1250px;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
     
     h1 {
         color: var(--dark);
-        padding-top: 8rem;
-        background-color: var(--white2);
         width: 90%;
         width: 1250px;
         justify-content: center;
         align-items: center;
-        margin: 0 auto;
     }
 }
