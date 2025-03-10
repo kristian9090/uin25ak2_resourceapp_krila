@@ -8,7 +8,8 @@ export default function Resources({ category, setTitle }) {
 
     return (
         <section>
-            <h3>Ressurser for <PageTitle/></h3>
+            {/* henter category fra pagetitle */}
+            <PageTitle category={category}/>
             <ul>
                 {filteredResources.map((resource, index) => (
                     <li key={index}>

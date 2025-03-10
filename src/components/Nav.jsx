@@ -7,7 +7,6 @@ export default function Nav({ category }) {
 
     return (
         <>
-        <PageTitle/>
         <nav>
             <button className="button">
                 <Link to="/html">HTML</Link>

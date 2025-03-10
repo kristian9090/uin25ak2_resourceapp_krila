@@ -4,7 +4,7 @@ import { resources } from '../resources/ressurser.js';
 
 export default function PageTitle({ category }) {
     return (
-        <>{category}</>
+        <h3>Ressurser for {category}</h3>
     );
 
 }
