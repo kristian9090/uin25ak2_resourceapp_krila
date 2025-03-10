@@ -13,7 +13,6 @@ export default function Layout({ children, category }) {
         <header>
             {/* Får inn komponentene */}
             <Nav />
-            {/* <PageTitle category={category}/> */}
         </header>
         <main>
             {children}

@@ -15,7 +15,6 @@ import './styles/layout.scss';
 
 function App() {
   return (
-    <Router>
       <Layout>
         <Routes>
            <Route path="/html" element={<Resources category="html" />} />
@@ -25,7 +24,6 @@ function App() {
            <Route path="/headless-cms" element={<Resources category="headless-cms" />} />
         </Routes>
       </Layout>
-    </Router>
   );
 }
 
