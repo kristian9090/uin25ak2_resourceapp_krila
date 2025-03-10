@@ -1,10 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import PageTitle from './PageTitle';
 
 export default function Nav({ category }) {
     
 
     return (
+        <>
+        <PageTitle/>
         <nav>
             <button className="button">
                 <Link to="/html">HTML</Link>
@@ -23,5 +26,6 @@ export default function Nav({ category }) {
             </button>
 
         </nav>
+        </>
     )
 }
