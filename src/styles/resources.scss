@@ -13,13 +13,6 @@ section {
         font-size: 24px;
         padding-left: 4rem;
     }
-    p {
-        margin-left: 20px;
-        color: var(--dark);
-        font-size: 18px;
-        padding-left: 4rem;
-
-    }
     ul {
         display: flex;
         flex-direction: column;
@@ -30,6 +23,13 @@ section {
             color: var(--dark);
             font-size: 18px;
             margin-bottom: 1rem;
+            a {
+                margin-left: 0;
+                padding-left: 0;
+                text-align: left;
+                color: var(--dark);
+                font-size: 18px;
+            }
         }
     }
 }

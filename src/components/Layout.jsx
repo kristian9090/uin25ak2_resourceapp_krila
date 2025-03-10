@@ -6,10 +6,6 @@ import { resources } from '../resources/ressurser.js';
 
 export default function Layout({ children, category }) {
 
-    // useEffect(() => {
-    //     resources.find(res => res.category === category);
-    // }, [category])
-
 
     
     return (

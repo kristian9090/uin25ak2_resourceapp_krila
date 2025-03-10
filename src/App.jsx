@@ -18,7 +18,6 @@ function App() {
     <Router>
       <Layout>
         <Routes>
-        <Route path="/" element={<Layout><Nav /></Layout>} />
            <Route path="/html" element={<Resources category="html" />} />
            <Route path="/css" element={<Resources category="css" />} />
            <Route path="/javascript" element={<Resources category="javascript" />} />

@@ -15,8 +15,9 @@ export default function Nav({ category }) {
     }
 
     return (
-        <>
+        
         <nav>
+            
             <button className={`button ${activeCategory === 'html' ? 'active' : ''}`} onClick={() => handleButtonClick('html')}>
                 <Link to="/html">HTML</Link>
             </button>
@@ -33,6 +34,5 @@ export default function Nav({ category }) {
                 <Link to="/headless-cms">Sanity and headless CMS</Link>
             </button>
         </nav>
-        </>
     )
 }
