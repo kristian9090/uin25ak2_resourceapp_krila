@@ -3,6 +3,7 @@ import Nav from "./Nav";
 import Resources from "./Resources";
 import PageTitle  from "./PageTitle";
 import { resources } from '../resources/ressurser.js';
+import '../styles/layout.scss';
 
 export default function Layout({ children, category }) {
 

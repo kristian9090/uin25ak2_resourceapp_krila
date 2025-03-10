@@ -23,8 +23,10 @@ section {
             color: var(--dark);
             font-size: 18px;
             margin-bottom: 1rem;
+            text-align: left;
             a {
-                text-align: left;
+                text-align: left !important;
+                justify-content: flex-start !important;
                 margin-left: 0;
                 padding-left: 0;
                 color: var(--dark);

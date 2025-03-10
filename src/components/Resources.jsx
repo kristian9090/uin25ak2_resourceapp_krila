@@ -1,6 +1,7 @@
 import React from "react";
 import { resources } from '../resources/ressurser.js';
 import PageTitle from "./PageTitle.jsx";
+import '../styles/resources.scss';
 
 export default function Resources({ category, setTitle }) {
     const filteredResources = resources.filter(res => res.category === category);
@@ -13,7 +14,7 @@ export default function Resources({ category, setTitle }) {
             <ul>
                 {filteredResources.map((resource, index) => (
                     <li key={index}>
-                        <a href={resource.url} target="_blank">
+                        <a className="tag" href={resource.url} target="_blank">
                             {resource.title}
                         </a>
                     </li>
