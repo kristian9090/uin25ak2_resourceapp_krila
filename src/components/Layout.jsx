@@ -6,11 +6,9 @@ import { resources } from '../resources/ressurser.js';
 
 export default function Layout({ children, category }) {
 
-    const [title] = useState("");
-
-    useEffect(() => {
-        const currentResource = resources.find(res => res.category === category);
-    }, [category])
+    // useEffect(() => {
+    //     resources.find(res => res.category === category);
+    // }, [category])
 
 
     
@@ -19,9 +17,9 @@ export default function Layout({ children, category }) {
         <header>
             {/* Får inn komponentene */}
             <Nav />
+            {/* <PageTitle category={category}/> */}
         </header>
         <main>
-        <PageTitle category={category}/>
             {children}
         </main>
     </>

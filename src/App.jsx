@@ -18,12 +18,12 @@ function App() {
     <Router>
       <Layout>
         <Routes>
-          {/* router/henter kategorier fra ressurser.js og mapper ut den som hører til i Resources.jsx */}
-          <Route path="/html" element={<Layout category="html"><Resources category="html" /></Layout>} />
-          <Route path="/css" element={<Layout category="css"><Resources category="css" /></Layout>} />
-          <Route path="/javascript" element={<Layout category="javascript"><Resources category="javascript" /></Layout>} />
-          <Route path="/react" element={<Layout category="react"><Resources category="react" /></Layout>} />
-          <Route path="/headless-cms" element={<Layout category="headless-cms"><Resources category="headless-cms" /></Layout>} />
+        <Route path="/" element={<Layout><Nav /></Layout>} />
+           <Route path="/html" element={<Resources category="html" />} />
+           <Route path="/css" element={<Resources category="css" />} />
+           <Route path="/javascript" element={<Resources category="javascript" />} />
+           <Route path="/react" element={<Resources category="react" />} />
+           <Route path="/headless-cms" element={<Resources category="headless-cms" />} />
         </Routes>
       </Layout>
     </Router>
