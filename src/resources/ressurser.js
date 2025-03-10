@@ -35,7 +35,7 @@ export const resources = [
     category: "css",
   },
   {
-    title: "W3C CSS Validator",
+    title: "W3C CSS Validator", 
     url: "https://jigsaw.w3.org/css-validator/",
     category: "css",
   },

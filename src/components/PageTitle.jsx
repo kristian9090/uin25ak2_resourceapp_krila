@@ -1,8 +1,10 @@
 import React from "react";
 import { resources } from '../resources/ressurser.js';
 
-export default function PageTitle({ category, title }) {
+
+export default function PageTitle({ category }) {
     return (
-        <h1>{title}</h1>
-    )
+        <h1>{category}</h1>
+    );
+
 }
