@@ -8,15 +8,20 @@ import '../styles/nav.scss';
 
 export default function Nav({ category }) {
     
+    // activeCategory brukes til å sjekke om knappen er valgt
+    // setcategory brukes til å oppdatere activeCategory
     const [activeCategory, setCategory] = useState('');
 
+    // her lages funkjsonen handleButtonClick finner category og oppdaterer activeCategory
     const handleButtonClick = (category) => {
         setCategory(category);
     }
 
     return (
         <nav>
+            {/* linker til riktig kategori altså html */}
             <Link to="/html">
+            {/* her sender handleButtonClick med riktig parameter */}
                 <button className={`button ${activeCategory === 'html' ? 'active' : ''}`} onClick={() => handleButtonClick('html')}>
                     HTML
                 </button>

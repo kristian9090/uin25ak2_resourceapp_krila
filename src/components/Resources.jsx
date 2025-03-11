@@ -4,17 +4,20 @@ import PageTitle from "./PageTitle.jsx";
 import '../styles/resources.scss';
 
 export default function Resources({ category, setTitle }) {
-    const filteredResources = resources.filter(res => res.category === category);
+    // filtrerer ut riktig kategori, der res ser etter category i arrayet
+    const filterResources = resources.filter(res => res.category === category);
 
+    
 
     return (
         <section>
-            {/* henter category fra pagetitle */}
+            {/* importerer pagetitle og tar med seg category */}
             <PageTitle category={category}/>
             <ul>
-                {filteredResources.map((resource, index) => (
+                {/* mapper ut rikitg kategori henter ut url og tittel, */}
+                {filterResources.map((resource, index) => (
                     <li key={index}>
-                        <a className="tag" href={resource.url} target="_blank">
+                        <a href={resource.url} target="_blank">
                             {resource.title}
                         </a>
                     </li>

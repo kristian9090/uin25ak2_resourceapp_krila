@@ -12,7 +12,7 @@ export default function Layout({ children, category }) {
     return (
     <>
         <header>
-            {/* Får inn komponentene */}
+            {/* Får inn komponentet nav */}
             <Nav />
         </header>
         <main>
