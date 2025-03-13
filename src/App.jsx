@@ -17,11 +17,14 @@ function App() {
   return (
       <Layout>
         <Routes>
-           <Route path="/html" element={<Resources category="html" />} />
-           <Route path="/css" element={<Resources category="css" />} />
-           <Route path="/javascript" element={<Resources category="javascript" />} />
-           <Route path="/react" element={<Resources category="react" />} />
-           <Route path="/headless-cms" element={<Resources category="headless-cms" />} />
+            {/* sender med html når siden lastes */}
+            <Route path="/" element={<Resources category="html" />} />
+            {/* router til html når det er i parameteret  */}
+            <Route path="/html" element={<Resources category="html" />} />
+            <Route path="/css" element={<Resources category="css" />} />
+            <Route path="/javascript" element={<Resources category="javascript" />} />
+            <Route path="/react" element={<Resources category="react" />} />
+            <Route path="/headless-cms" element={<Resources category="headless-cms" />} />
         </Routes>
       </Layout>
   );
