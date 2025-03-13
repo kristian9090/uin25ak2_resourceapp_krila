@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import PageTitle from './PageTitle';
 import { useState } from 'react';
 import '../styles/nav.scss';
+import { useEffect } from 'react';
 
 
 
@@ -10,12 +11,15 @@ export default function Nav({ category }) {
     
     // activeCategory brukes til å sjekke om knappen er valgt
     // setcategory brukes til å oppdatere activeCategory
-    const [activeCategory, setCategory] = useState('');
+    const [activeCategory, setCategory] = useState('')
 
     // her lages funkjsonen handleButtonClick finner category og oppdaterer activeCategory
     const handleButtonClick = (category) => {
-        setCategory(category);
+        setCategory(category)
     }
+
+
+    useEffect(() => {setCategory('html')}, [])
 
     return (
         <nav>
