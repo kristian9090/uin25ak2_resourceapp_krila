@@ -1,4 +1,4 @@
-import React from "react";
+import React, { use } from "react";
 import { resources } from '../resources/ressurser.js';
 import PageTitle from "./PageTitle.jsx";
 import '../styles/resources.scss';
@@ -6,7 +6,6 @@ import '../styles/resources.scss';
 export default function Resources({ category, setTitle }) {
     // filtrerer ut riktig kategori, der res er kort for resources og ser etter category i arrayet
     const displayResources = resources.filter(res => res.category === category);
-
     
 
     return (

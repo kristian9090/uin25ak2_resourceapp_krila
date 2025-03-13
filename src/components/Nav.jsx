@@ -19,8 +19,15 @@ export default function Nav({ category }) {
         setCategory(category)
     }
 
-    // useEffect setter categoryt til html når det lastes
-    useEffect(() => {setCategory('html')}, [category])
+    useEffect(() => {
+        // her finner den ut hvilken kategori som er valgt med å bruke location.pathname
+        // https://api.reactrouter.com/v7/functions/react_router.useLocation.html
+        // substring fjerner / fra path
+        // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substring
+        setCategory(location.pathname.substring(1));
+    }, [location.pathname]);
+    
+
 
     return (
         <nav>
