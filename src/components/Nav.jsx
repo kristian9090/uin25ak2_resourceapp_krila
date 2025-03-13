@@ -24,9 +24,9 @@ export default function Nav({ category }) {
         // https://api.reactrouter.com/v7/functions/react_router.useLocation.html
         // substring fjerner / fra path
         // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substring
-        setCategory(location.pathname.substring(1));
+        const categoryStart = location.pathname.substring(1)
+        setCategory(categoryStart || resources.category || 'html'); // Standard til HTML
     }, [location.pathname]);
-    
 
 
     return (
