@@ -19,7 +19,7 @@ export default function Nav({ category }) {
         setCategory(category)
     }
 
-    // useEffect setter category
+    // useEffect setter categoryt til html når det lastes
     useEffect(() => {setCategory('html')}, [category])
 
     return (
