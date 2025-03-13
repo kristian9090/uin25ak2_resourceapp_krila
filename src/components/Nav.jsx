@@ -4,6 +4,7 @@ import PageTitle from './PageTitle';
 import { useState } from 'react';
 import '../styles/nav.scss';
 import { useEffect } from 'react';
+import { resources } from '../resources/ressurser';
 
 
 
@@ -18,8 +19,8 @@ export default function Nav({ category }) {
         setCategory(category)
     }
 
-
-    useEffect(() => {setCategory('html')}, [])
+    // useEffect setter category
+    useEffect(() => {setCategory('html')}, [category])
 
     return (
         <nav>
