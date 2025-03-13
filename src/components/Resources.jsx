@@ -4,8 +4,8 @@ import PageTitle from "./PageTitle.jsx";
 import '../styles/resources.scss';
 
 export default function Resources({ category, setTitle }) {
-    // filtrerer ut riktig kategori, der res ser etter category i arrayet
-    const filterResources = resources.filter(res => res.category === category);
+    // filtrerer ut riktig kategori, der res er kort for resources og ser etter category i arrayet
+    const displayResources = resources.filter(res => res.category === category);
 
     
 
@@ -15,7 +15,7 @@ export default function Resources({ category, setTitle }) {
             <PageTitle category={category}/>
             <ul>
                 {/* mapper ut rikitg kategori henter ut url og tittel, */}
-                {filterResources.map((resource, index) => (
+                {displayResources.map((resource, index) => (
                     <li key={index}>
                         <a href={resource.url} target="_blank">
                             {resource.title}

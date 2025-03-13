@@ -29,8 +29,11 @@ section {
                 justify-content: flex-start !important;
                 margin-left: 0;
                 padding-left: 0;
-                color: var(--dark);
+                color: var(--blue);
                 font-size: 18px;
+            }
+            a:hover {
+                text-decoration: underline;
             }
         }
     }
